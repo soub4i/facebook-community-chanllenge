@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-grid-thirds {
+            display: flex;
+            justify-content: space-between;
+            min-height: 700px;
+        }
+
+        .flex-grid-thirds .col {
+            width: 40%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="flex-grid-thirds">
+
+
+        <div class="col">
+
+            <web-merge id="react" content="http://localhost:3000"></web-merge>
+        </div>
+        <div class="col">
+            <web-merge content="./fragments/form.html"></web-merge>
+        </div>
+
+
+    </div>
+
+
+    <script src="bundle.js"></script>
+
+</body>
+
+</html>
